@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-size: 40px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background-color: bisque;
+      padding: 20px;
+      box-shadow: 0 4px 8px 0 rgb(236, 213, 213);
+      border-radius: 5px;
+    }
+    ol {
+      padding-left: 20px;
+    }
+    li {
+      margin: 8px 0;
+      font-weight: 700;
+    }
+    h2 {
+      margin: 20px 0;
+      color: blueviolet;
+    }
+    #applications-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>JavaScript Full Course by Suresh Yadam</h1>
+      <h2>Applications Developed</h2>
+      <ol id="applications-container"></ol>
+      <h2>Chapters</h2>
+      <ol id="chapter-container"></ol>
+    </div>
+    <script src="home.js"></script>
+  </body>
+</html>

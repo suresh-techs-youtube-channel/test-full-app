@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suresh Bio data</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body style="background-color: rgb(238, 238, 238)">
+    <header>
+      <h1
+        style="
+          text-align: center;
+          background-color: green;
+          color: white;
+          padding: 50px;
+          font-size: 30px;
+        "
+      >
+        Suresh Biodata
+      </h1>
+    </header>
+    <div
+      style="
+        margin: auto;
+        max-width: 800px;
+        background-color: white;
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0px 4px 8px 0px black;
+      "
+    >
+      <div class="section-container">
+        <p class="section">Personal Details</p>
+        <p class="section-content"><strong>Name:</strong> Suresh Yadam</p>
+        <p class="section-content"><strong>Age:</strong> 18</p>
+        <p class="section-content">
+          <strong>Location:</strong> Palasa, Srikakulam
+        </p>
+      </div>
+      <div class="section-container">
+        <p class="section">Education</p>
+        <p class="section-content">B.Tech in computer science</p>
+      </div>
+      <div class="section-container">
+        <p class="section">Courses</p>
+        <a
+          href="https://youtu.be/hXN0JBWIya8"
+          target="_blank"
+          style="text-decoration: none"
+          class="section-content"
+          >Python</a
+        >
+        <a
+          href="https://youtu.be/3JF7ndGauZk"
+          target="_blank"
+          style="text-decoration: none"
+          class="section-content"
+          >C Programming</a
+        >
+        <a
+          href="https://youtu.be/LIhE7L__E6M"
+          target="_blank"
+          style="text-decoration: none"
+          class="section-content"
+          >Git</a
+        >
+      </div>
+      <div class="section-container">
+        <p class="section">Skills</p>
+        <span class="language-chip">HTML</span>
+        <span class="language-chip">CSS</span>
+        <span class="language-chip">JavaScript</span>
+        <span class="language-chip">React</span>
+        <span class="language-chip">Node JS</span>
+      </div>
+      <div class="section-container">
+        <p class="section">Contact</p>
+        <p class="section-content">
+          <strong>Email:</strong> nextchepta@naistam.com
+        </p>
+        <p class="section-content"><strong>Phone:</strong> 993838838388</p>
+      </div>
+      <div class="section-container">
+        <button id="showmoreButton">Show More Details</button>
+      </div>
+      <div id="additionalDetails" style="display: none">
+        <div>
+          <p class="section">Hobbies</p>
+          <p class="section-content">Playing cricket, Requesting subscribe</p>
+        </div>
+        <div>
+          <p class="section">Experience</p>
+          <p class="section-content">Software Develoer (2015-present)</p>
+        </div>
+      </div>
+    </div>
+    <p
+      style="
+        text-align: center;
+        padding: 20px;
+        color: white;
+        background-color: rgb(17, 15, 15);
+      "
+    >
+      &copy; 2025 Suresh Yadam |
+      <a href="#" style="text-decoration: none; color: green">Privacy Policy</a>
+    </p>
+    <script>
+      const showmoreButton = document.getElementById("showmoreButton");
+      const additionalDetails = document.getElementById("additionalDetails");
+      showmoreButton.addEventListener("click", () => {
+        if (additionalDetails.style.display === "none") {
+          additionalDetails.style.display = "block";
+          showmoreButton.textContent = "Hide more details";
+        } else {
+          additionalDetails.style.display = "none";
+          showmoreButton.textContent = "Show more details";
+        }
+      });
+    </script>
+  </body>
+</html>
